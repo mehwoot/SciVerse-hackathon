@@ -11,8 +11,8 @@ function getContextInfo() {
 }
 		
 function contextCallback(obj) {
-  $("#content").html("<iframe src='http://sciverse-annotator.herokuapp.com/papers/" + obj.pii + "?title=" + encodeURIComponent(obj.docTitle) + "' width='327' height='150' style='border: none; margin: 0px; padding: 0px'></iframe>");
-  gadgets.window.adjustHeight();
+    alert('lol');
+    $("#content").html("<iframe src='http://sciverse-annotator.herokuapp.com/papers/" + obj.pii + "?title=" + encodeURIComponent(obj.docTitle) + "' width='327' height='150' style='border: none; margin: 0px; padding: 0px'></iframe>");
 }
 
 $(document).ready(function () {

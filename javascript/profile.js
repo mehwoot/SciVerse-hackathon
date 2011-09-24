@@ -16,10 +16,7 @@ function contextCallback(obj) {
 
 $(document).ready(function() {
     
-    
     gadgets.sciverse.getContextInfo(contextCallback);
      
-    
-    
 });
 
