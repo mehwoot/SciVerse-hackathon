@@ -46,7 +46,10 @@ function enableAnnotations() {
         if (annotation_selected != -1) {
             annotations[annotation_selected].comments.push($("#comment_input").attr("value"));
             $("#comment_input").attr("value", "");
-            //$("#comments").html(annotations[annotation_selected].comments);
+            $("#comments").html("");
+            for (int i=0; i<annotations[annotation_selected].comments.length; i++) {
+                $("#comments").append("<span class='comment'>" + annotations[annotation_selected].comments[i] + "</span>");
+            }
         }
     });
     
