@@ -12,6 +12,15 @@ function getContentCallback(response) {
     }
     // Tells gadget to resize itself
     gadgets.window.adjustHeight();
+    
+    enableAnnotations();
+    
+}
+
+function enableAnnotations() {
+    $("#articleHTML").mousedown(function (evt) {
+       alert(evt.which); 
+    });
 }
 
 $(document).ready(function () {
