@@ -23,7 +23,7 @@
       <![CDATA[
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
 
- <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/master/javascript/canvas.js">
+ <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/canvas.js">
  </script>
 
  <div id="articleHTML" >
@@ -39,9 +39,20 @@
     
       <Content type="html" view="profile">
  <![CDATA[
- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
- 
-  <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/master/javascript/profile.js">
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+ <div id="fb-root"></div>
+ <script src="http://connect.facebook.net/en_US/all.js"></script>
+ <script>
+   FB.init({
+     appId  : '178578362220129',
+     status : true, // check login status
+     cookie : true, // enable cookies to allow the server to access the session
+     xfbml  : true, // parse XFBML
+     channelURL : 'http://WWW.MYDOMAIN.COM/channel.html', // channel.html file
+     oauth  : true // enable OAuth 2.0
+   });
+ </script>
+ <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/profile.js">
  </script>
  
  
