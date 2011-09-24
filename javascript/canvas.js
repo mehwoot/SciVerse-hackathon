@@ -58,8 +58,8 @@ function enableAnnotations() {
                     
             $("#articleHTML").append("<div class='annotation' style='border: 1px solid #f00; position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_" + annotation_number + "'></div>");
             
-            $("#annotation_" + annotation_number).append("<div class='text_button' style='position:relative; text-align: center; top: " + height + "px; width: " + width + "px;' id='text_button_" + annotation_number + "' note_id='" + annotation_number + "' >Click here!</div>");
-            $("#annotation_" + annotation_number).append("<textarea rows='1' cols='15' class='text_button' style='display:none; position:relative; top: " + height + "px; width: " + width + "px;' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' ></textarea>");
+            $("#annotation_" + annotation_number).append("<div class='text_button' style='position:relative; text-align: center; top: " + height + "px; width: " + width + "px;' id='text_button_" + annotation_number + "' note_id='" + annotation_number + "' >Add text</div>");
+            $("#annotation_" + annotation_number).append("<div class='text_button' style='display:none; position:relative; top: " + height + "px; width: " + width + "px;' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' >textarea rows='1' cols='15'></textarea></div>");
             
             $("#text_button_" + annotation_number).click(function () {
                 $("#text_field_" + $(this).attr("note_id")).slideToggle();
