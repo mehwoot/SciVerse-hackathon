@@ -5,6 +5,11 @@
   *
   */
   
+  
+down = {};
+up = {};
+annotation_number = 0;
+  
 function getContentCallback(response) {
     if (response != null)
     {
@@ -19,12 +24,18 @@ function getContentCallback(response) {
 
 function enableAnnotations() {
     $("#articleHTML").mousedown(function (evt) {
-       alert(evt.clientX); 
-       alert(evt.pageX); 
-       alert(evt.layerX); 
-       alert(evt.offsetX); 
-       alert(evt.screenX); 
+       down.x = evt.clientX; 
+       down.y = evt.clientY; 
     });
+    
+    $("#articleHTML").mouseup(function (evt) {
+        up.x = evt.clientX;
+        up.y = evt.clientY;
+        
+        
+        $(body).append("<div class='annotation' id='annotation_number'>annotation</div>");
+        
+    }
 }
 
 $(document).ready(function () {
