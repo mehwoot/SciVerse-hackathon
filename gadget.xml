@@ -4,7 +4,18 @@
             title="sciverse"
             author_email="ramlambmoo@gmail.com"
             description="sciverse hackathon">
+        <Require feature="opensocial-0.9" />
+        <Require feature="pubsub" />
+        <Require feature="views" />
+        <Require feature="flash" />
+        <Require feature="skins" />
+        <Require feature="dynamic-height" />
+        <Require feature="settitle" />
+        <Require feature="minimessage" />
+        <Require feature="tabs" />
         <Require feature="sciverse" />
+        <Require feature="hub" />
+        <Require feature="org.jquery.core-1.4.2" />
     </ModulePrefs>
     <Content type="html" view="canvas"><![CDATA[<!-- The code for Canvas view is here. -->
 <div>Canvas view for sciverse.</div>]]></Content>
