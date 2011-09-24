@@ -23,28 +23,47 @@
       <![CDATA[
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
 
- <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/canvas.js">
+ <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/gareth/javascript/canvas.js">
  </script>
+ 
+ <link rel="stylesheet" type="text/css" href="https://raw.github.com/master/SciVerse-hackathon/gareth/css/canvas.css" />
 
- <div id="articleHTML" >
+ <div id="articleHTML" style="width: 1000px; float: left;" >
 
  </div>
  
- <div id="sidebar">
+  <div id="sidebar" style="width: 200px; left: 1100px; position: fixed; " >
+    <div id="make_annotation">Click here to make annotation</div>
+    <div id="comments"></div>
+    <textarea id="comment_input" cols="30" rows="3"></textarea>
+    <input type="submit" id="comment_submit" value="submit" />
  
  </div>
+ 
+
  
    ]]>
       </Content>
     
-      <Content type="html" view="profile"> <![CDATA[
-        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
-          <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/profile.js"> </script>
-          <div id="content" style="display:block"></div>
-        ]]>
-      </Content>
-      <Content type="html" view="sciverseResultsView"><![CDATA[<!-- The code for Sciverse Results View view is here. -->
+
+      <Content type="html" view="profile">
+ <![CDATA[
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
+ 
+  <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/master/javascript/profile.js">
+ </script>
+ 
+ 
+ <div id="content" style="display:block">
+ 
+ </div>
+
+   ]]>
+  </Content>
+  
+    <Content type="html" view="sciverseResultsView"><![CDATA[<!-- The code for Sciverse Results View view is here. -->
 <div>Sciverse Results View view for sciverse.</div>]]></Content>
+
       <Content type="html" view="hover"><![CDATA[<!-- The code for Hover view is here. -->
 <div>Hover view for sciverse.</div>]]></Content>
 </Module>
