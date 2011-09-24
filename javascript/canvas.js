@@ -26,16 +26,16 @@ function getContentCallback(response) {
 function enableAnnotations() {
     
     $("#articleHTML").mousedown(function (evt) {
-       down.x = evt.clientX; 
-       down.y = evt.clientY; 
+       down.x = evt.pageX; 
+       down.y = evt.pageY; 
        evt.preventDefault();
        
     });
     
     $("#articleHTML").mouseup(function (evt) {
         
-        up.x = evt.clientX;
-        up.y = evt.clientY;
+        up.x = evt.pageX;
+        up.y = evt.pageY;
         
         first = {};
         second = {};
