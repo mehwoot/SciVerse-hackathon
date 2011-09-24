@@ -26,6 +26,9 @@ function enableAnnotations() {
     $("#articleHTML").mousedown(function (evt) {
        down.x = evt.clientX; 
        down.y = evt.clientY; 
+       
+       alert('hey!');
+       
     });
     
     $("#articleHTML").mouseup(function (evt) {
