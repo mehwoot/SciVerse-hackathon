@@ -88,6 +88,8 @@ function enableAnnotations() {
             });
             
             annotation_selected = annotation_number;
+            updateDisplayComments();
+            
             annotation_number += 1;
             evt.preventDefault();
             
