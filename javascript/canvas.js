@@ -11,7 +11,7 @@ function getPageHtmlCallback(response) {
         $("#content_iframe").load(function () {
             alert($("#content_iframe").contents().find("#articleHTML").length);
             $("#content_iframe").contents().find("#articleHTML").html(response);
-        }
+        });
         /*document.getElementById("content_iframe");*/
         /*document.getElementById('articleHTML').innerHTML = response;*/
         /*document.getElementById("articleHTML").innerHTML=response;*/
