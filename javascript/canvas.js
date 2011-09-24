@@ -12,7 +12,7 @@ function getPageHtmlCallback(response) {
             
             
             var o = document.getElementById('content_iframe');
-            o.contentWindow.postMessage('Hello World');
+            //o.contentWindow.postMessage('Hello World');
             
             
             /*console.log($("#content_iframe").contents());
