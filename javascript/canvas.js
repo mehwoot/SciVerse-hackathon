@@ -35,7 +35,7 @@ function enableAnnotations() {
         
         $(body).append("<div class='annotation' id='annotation_number'>annotation</div>");
         
-    }
+    });
 }
 
 $(document).ready(function () {
