@@ -61,6 +61,7 @@ function enableAnnotations() {
             $("#" + annotation_number).append("<div style='display:none' class='text_button' id='text_field_" + annotation_number + "' note_id='" + annotation_number + " ' >ewfffffffffffffffwefwef</div>");
             
             $("#text_button_" + annotation_number).click(function () {
+                alert('lol');
                 $("#text_field_" + annotation_number).show();
             });
             
