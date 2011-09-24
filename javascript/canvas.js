@@ -24,7 +24,7 @@ function getPageHtmlCallback(response) {
 }
 		
 function getContentCallback(obj) {
-    $("#content").html("<iframe id='content_iframe' src='http://sciverse-annotator.herokuapp.com/papers/" + obj.pii + "?title=" + encodeURIComponent(obj.docTitle) + "' style='border: none; margin: 0px; padding: 0px'></iframe>");
+    $("#content").html("<iframe id='content_iframe' src='http://sciverse-annotator.herokuapp.com/papers/" + obj.pii + "?title=" + encodeURIComponent(obj.docTitle) + "' style='border: none; position: absolute; top: 0px; left:0px; right:0px; bottom: 0px; margin: 0px; padding: 0px'></iframe>");
     gadgets.sciverse.getArticleContent(getPageHtmlCallback);
 }
 
