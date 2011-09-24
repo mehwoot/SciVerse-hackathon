@@ -28,10 +28,12 @@ function enableAnnotations() {
     $("#articleHTML").mousedown(function (evt) {
        down.x = evt.clientX; 
        down.y = evt.clientY; 
+       evt.preventDefault();
        
     });
     
     $("#articleHTML").mouseup(function (evt) {
+        
         up.x = evt.clientX;
         up.y = evt.clientY;
         
@@ -48,7 +50,7 @@ function enableAnnotations() {
         height = second.y - first.y;
                 
         $("#articleHTML").append("<div class='annotation' style='position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_number'>annotation!!!!!!!!</div>");
-        
+        evt.preventDefault();
     });
 }
 
