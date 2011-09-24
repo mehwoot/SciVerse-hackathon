@@ -10,7 +10,7 @@ down = {};
 up = {};
 annotation_number = 0;
 annotate_mode = false;
-  
+
 function getContentCallback(response) {
     if (response != null)
     {
