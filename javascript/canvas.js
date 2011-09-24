@@ -19,7 +19,7 @@ function getContentCallback(response) {
     
     gadgets.window.adjustHeight();
     
-        alert('woah!');
+    alert('woah!');
     
     enableAnnotations();
     
