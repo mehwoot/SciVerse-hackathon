@@ -1,5 +1,6 @@
 function contextCallback(obj){
     
+    alert(obj);
     var rs = JSON.parse(obj);
     alert(rs);
    
