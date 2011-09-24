@@ -37,33 +37,14 @@
    ]]>
       </Content>
     
-      <Content type="html" view="profile">
- <![CDATA[
- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
- <div id="fb-root"></div>
- <script src="http://connect.facebook.net/en_US/all.js"></script>
- <script>
-   FB.init({
-     appId  : '178578362220129',
-     status : true, // check login status
-     cookie : true, // enable cookies to allow the server to access the session
-     xfbml  : true, // parse XFBML
-     channelURL : 'http://WWW.MYDOMAIN.COM/channel.html', // channel.html file
-     oauth  : true // enable OAuth 2.0
-   });
- </script>
- <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/profile.js">
- </script>
- 
- 
- <div id="content" style="display:block">
- 
- </div>
-
-   ]]>
-  </Content>
-    <Content type="html" view="sciverseResultsView"><![CDATA[<!-- The code for Sciverse Results View view is here. -->
+      <Content type="html" view="profile"> <![CDATA[
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+          <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/profile.js"> </script>
+          <div id="content" style="display:block"></div>
+        ]]>
+      </Content>
+      <Content type="html" view="sciverseResultsView"><![CDATA[<!-- The code for Sciverse Results View view is here. -->
 <div>Sciverse Results View view for sciverse.</div>]]></Content>
-    <Content type="html" view="hover"><![CDATA[<!-- The code for Hover view is here. -->
+      <Content type="html" view="hover"><![CDATA[<!-- The code for Hover view is here. -->
 <div>Hover view for sciverse.</div>]]></Content>
 </Module>
