@@ -62,7 +62,7 @@ function enableAnnotations() {
             $("#annotation_" + annotation_number).append("<div class='text_button' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' >ewfffffffffffffffwefwef</div>");
             
             $("#text_button_" + annotation_number).click(function () {
-                alert($("#text_field_" + annotation_number));
+                alert($("#text_field_" + annotation_number).length);
                 $("#text_field_" + annotation_number).toggle();
             });
             
