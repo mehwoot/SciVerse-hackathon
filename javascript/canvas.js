@@ -66,7 +66,7 @@ function enableAnnotations() {
             });
             
             $("#annotation_submit_" + annotation_number).click(function () {
-                $("#text_field_" + $(this).attr("note_id")).before("<div style='position:relative; top:" + $(this).css("top") + "px' >sdfsdfdsfsdfssdf" + $("#textarea_" + $(this).attr("note_id")).attr("value") + "</div>");
+                $("#text_field_" + $(this).attr("note_id")).before("<div style='position:relative; top:" + $(this).css("top") + "px' >" + $("#textarea_" + $(this).attr("note_id")).attr("value") + "</div>");
                 $(this).parent().slideToggle(); 
             });
             
