@@ -45,6 +45,7 @@ function enableAnnotations() {
     $("#comment_submit").click(function () {
         if (annotation_selected != -1) {
             annotations[annotation_selected].comments.push($("#comment_input").attr("value"));
+            $("#comment_input").attr("value", "");
             //$("#comments").html(annotations[annotation_selected].comments);
         }
     });
