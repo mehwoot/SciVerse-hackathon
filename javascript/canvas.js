@@ -83,6 +83,8 @@ function enableAnnotations() {
                 ann_num = $(this).attr("ann_num");
                 annotation_selected = ann_num;
                 updateDisplayComments();
+                $(".annotation").removeClass("selected");
+                $(this).addClass("selected");
             });
             
             
