@@ -28,13 +28,13 @@
  
  <link rel="stylesheet" type="text/css" href="https://raw.github.com/mehwoot/SciVerse-hackathon/gareth/css/canvas.css" />
 
- <div id="sidebar">
+ <div id="articleHTML" style="width: 600px; float: left;" >
+
+ </div>
+ 
+  <div id="sidebar" style="width: 200px; float: left; " >
     <div id="make_annotation">Click here to make annotation</div>
  
- </div>
-
- <div id="articleHTML" >
-
  </div>
  
 
