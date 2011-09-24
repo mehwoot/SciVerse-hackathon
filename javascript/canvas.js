@@ -35,7 +35,7 @@ function enableAnnotations() {
         up.x = evt.clientX;
         up.y = evt.clientY;
         
-        $("#articleHTML").append("<div class='annotation' style='left:" + up.x + "px; top: " + up.y + "px;' id='annotation_number'>annotation!!!!!!!!</div>");
+        $("#articleHTML").append("<div class='annotation' style='position: absolute; left:" + up.x + "px; top: " + up.y + "px;' id='annotation_number'>annotation!!!!!!!!</div>");
         
     });
 }
