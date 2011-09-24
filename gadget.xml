@@ -28,7 +28,7 @@
  
  <link rel="stylesheet" type="text/css" href="https://raw.github.com/mehwoot/SciVerse-hackathon/gareth/css/canvas.css" />
 
- <div id="articleHTML" style="width: 600px; float: left;" >
+ <div id="articleHTML" style="width: 1000px; float: left;" >
 
  </div>
  
