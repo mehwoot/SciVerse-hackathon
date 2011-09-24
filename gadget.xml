@@ -26,21 +26,7 @@
  <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/gareth/javascript/canvas.js">
  </script>
  
- <link rel="stylesheet" type="text/css" href="https://raw.github.com/master/SciVerse-hackathon/gareth/css/canvas.css" />
-
- <div id="articleHTML" style="width: 1000px; float: left;" >
-
- </div>
- 
-  <div id="sidebar" style="width: 200px; left: 1100px; position: fixed; " >
-    <div id="make_annotation">Click here to make annotation</div>
-    <div id="comments"></div>
-    <textarea id="comment_input" cols="30" rows="3"></textarea>
-    <input type="submit" id="comment_submit" value="submit" />
- 
- </div>
- 
-
+    <div id="content"></div>
  
    ]]>
       </Content>
