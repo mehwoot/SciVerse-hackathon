@@ -11,7 +11,7 @@ function getContentCallback(obj) {
 
 $(document).ready(function () {
     
-    alert($(window.top).find("#articlePage"));
+    alert($(window.top).find("#articlePage").html());
     
     context_data = gadgets.views.getParams();
     /* Get the article content */
