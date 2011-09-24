@@ -8,7 +8,7 @@
 function getPageHtmlCallback(response) {
     if (response != null)
     {
-        window.frames['content_iframe'].document.getElementById('articleHTML').innerHTML = response;
+        document.getElementById("content_iframe").document.getElementById('articleHTML').innerHTML = response;
         /*document.getElementById("articleHTML").innerHTML=response;*/
     }
     
