@@ -13,11 +13,11 @@ function getContentCallback(response) {
     // Tells gadget to resize itself
     gadgets.window.adjustHeight();
     
-    enableAnnotations();
+    //enableAnnotations();
 }
 
 function enableAnnotations {
-    $j("#articleHTML").mousedown();
+   // $j("#articleHTML").mousedown();
 }
 
 
