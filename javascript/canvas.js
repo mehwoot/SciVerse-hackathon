@@ -9,8 +9,8 @@ function getPageHtmlCallback(response) {
     if (response != null)
     {
         $("#content_iframe").load(function () {
-            alert($("#content_iframe").contents());
-            alert($("#content_iframe").contents().find("#articleHTML").length);
+            console.log($("#content_iframe").contents());
+            console.log($("#content_iframe").contents().find("#articleHTML").length);
             $("#content_iframe").contents().find("#articleHTML").html(response);
         });
     }
