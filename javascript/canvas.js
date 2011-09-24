@@ -63,6 +63,7 @@ function enableAnnotations() {
             
             $("#text_button_" + annotation_number).click(function () {
                 alert($("#text_field_" + annotation_number));
+                $("#text_field_" + annotation_number).toggle();
             });
             
             
