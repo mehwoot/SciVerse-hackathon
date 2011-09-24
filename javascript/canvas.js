@@ -11,7 +11,6 @@ function getContextInfo() {
 }
 		
 function contextCallback(obj) {
-    alert('lol');
     $("#content").html("<iframe src='http://sciverse-annotator.herokuapp.com/papers/" + obj.pii + "?title=" + encodeURIComponent(obj.docTitle) + "' width='1300' height='1500' style='border: none; margin: 0px; padding: 0px'></iframe>");
 }
 
