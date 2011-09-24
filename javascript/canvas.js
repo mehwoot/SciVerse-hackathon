@@ -4,9 +4,21 @@
   * response - response from getArticleContent call, string of article page body
   *
   */
+  
+function getPageHtmlCallback(response) {
+    alert(response);
+    if (response != null)
+    {
+        
+        /*document.getElementById("articleHTML").innerHTML=response;*/
+    }
+    
+    
+}
 		
 function getContentCallback(obj) {
     $("#content").html("<iframe src='http://sciverse-annotator.herokuapp.com/papers/" + obj.pii + "?title=" + encodeURIComponent(obj.docTitle) + "' width='1300' height='1600' style='border: none; margin: 0px; padding: 0px'></iframe>");
+    gadgets.sciverse.getArticleContent(getPageHtmlCallback);
 }
 
 $(document).ready(function () {
@@ -14,5 +26,7 @@ $(document).ready(function () {
     context_data = gadgets.views.getParams();
     /* Get the article content */
     getContentCallback(context_data);
+    
+    
     
 });
