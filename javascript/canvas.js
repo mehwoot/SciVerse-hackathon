@@ -13,6 +13,6 @@ $(document).ready(function () {
     
     context_data = gadgets.views.getParams();
     /* Get the article content */
-    gadgets.sciverse.getArticleContent(getContentCallback);
+    getContentCallback(context_data);
     
 });
