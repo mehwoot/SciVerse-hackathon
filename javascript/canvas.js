@@ -68,7 +68,7 @@ function enableAnnotations() {
             $("#annotation_submit_" + annotation_number).click(function () {
                 $("#textarea_" + $(this).attr("note_id")).before("<div style='position:relative;' >" + $("#textarea_" + $(this).attr("note_id")).attr("value") + "</div>");
                 $("#textarea_" + $(this).attr("note_id")).attr("value", "");
-                $(this).parent().slideToggle(); 
+                //$(this).parent().slideToggle(); 
             });
             
             
