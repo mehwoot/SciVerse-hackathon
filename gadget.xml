@@ -18,26 +18,17 @@
         <Require feature="org.jquery.core-1.4.2" />
     </ModulePrefs>
     
-    
       <Content type="html" view="canvas">
-      <![CDATA[
- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
-
- <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/canvas.js">
- </script>
-
-<div id="content" style="position: absolute; top: 0px; left:0px; right:0px; bottom: 0px;" ></div> 
-   ]]>
+        <![CDATA[
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+          <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/canvas.js"></script>
+          <div id="content" style="position: absolute; top: 0px; left:0px; right:0px; bottom: 0px;" ></div>
+        ]]>
       </Content>
-    
       <Content type="html" view="profile"> <![CDATA[
         <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
           <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/profile.js"> </script>
           <div id="content" style="display:block"></div>
         ]]>
       </Content>
-      <Content type="html" view="sciverseResultsView"><![CDATA[<!-- The code for Sciverse Results View view is here. -->
-<div>Sciverse Results View view for sciverse.</div>]]></Content>
-      <Content type="html" view="hover"><![CDATA[<!-- The code for Hover view is here. -->
-<div>Hover view for sciverse.</div>]]></Content>
 </Module>
