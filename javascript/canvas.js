@@ -6,9 +6,9 @@
   */
   
   
-//down = {};
-//up = {};
-//annotation_number = 0;
+down = {};
+up = {};
+annotation_number = 0;
   
 function getContentCallback(response) {
     if (response != null)
@@ -19,22 +19,15 @@ function getContentCallback(response) {
     
     gadgets.window.adjustHeight();
     
-    alert('woah!');
-    
     enableAnnotations();
     
 }
 
 function enableAnnotations() {
     
-    
-    alert('whoo!');
-    
     $("#articleHTML").mousedown(function (evt) {
-       //down.x = evt.clientX; 
-       //down.y = evt.clientY; 
-       
-       alert('hey!');
+       down.x = evt.clientX; 
+       down.y = evt.clientY; 
        
     });
     
