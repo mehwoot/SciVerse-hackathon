@@ -17,37 +17,51 @@
         <Require feature="hub" />
         <Require feature="org.jquery.core-1.4.2" />
     </ModulePrefs>
-      <Content type="html" view="canvas,profile">
- <![CDATA[
+    
+    
+      <Content type="html" view="canvas">
+      <![CDATA[
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
 
  <script type="text/javascript">
-  
-  function getContextInfo(){
-   gadgets.sciverse.getContextInfo(contextCallback);
-  }
- 
-  function contextCallback(obj){
 
-      var rs = JSON.stringify(obj);
+ /*
+  * Call back function to process content
+  *
+  * response - response from getArticleContent call, string of article page body
+  *
+  */
+ function getContentCallback(response)
+ {
+   if (response != null)
+   {
+     document.getElementById("articleHTML").innerHTML=response;
+   }
+          // Tells gadget to resize itself
+          gadgets.window.adjustHeight();
+ }
 
-      //Format the string for display.
-      rs = rs.replace(/",/g,"\",<br>");
 
-      var contextInfo = document.getElementById("contextInfo");
-      contextInfo.innerHTML = rs;
-     
-       gadgets.window.adjustHeight();
-      
-  }
+    $(document).ready(function () {
+        gadgets.sciverse.getArticleContent(getContentCallback);
+    });
 
  </script>
 
- <p><a href="javascript:void(0);" onclick="getContextInfo();">Get Context Info</a></p>
 
- <div id="contextInfo" style="display:block">
+
+ <div id="articleHTML" style="display:block">
 
  </div>
+   ]]>
+      </Content>
+    
+      <Content type="html" view="profile">
+ <![CDATA[
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
+
+    Open in full screen view to markup this application!
+ 
    ]]>
   </Content>
     <Content type="html" view="sciverseResultsView"><![CDATA[<!-- The code for Sciverse Results View view is here. -->
