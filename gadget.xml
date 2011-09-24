@@ -35,9 +35,11 @@
       <Content type="html" view="profile">
  <![CDATA[
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
-
-    Open in full screen view to markup this application!
  
+ <div id="content" style="display:block">
+ 
+ </div>
+
    ]]>
   </Content>
     <Content type="html" view="sciverseResultsView"><![CDATA[<!-- The code for Sciverse Results View view is here. -->

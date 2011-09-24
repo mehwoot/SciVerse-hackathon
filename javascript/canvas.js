@@ -5,8 +5,6 @@
   *
   */
   
-  alert('hey');
-  
  function getContentCallback(response)
  {
    if (response != null)
