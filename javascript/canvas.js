@@ -59,7 +59,7 @@ function enableAnnotations() {
             $("#articleHTML").append("<div class='annotation' style='border: 1px solid #f00; position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_" + annotation_number + "'>annotation!!!!!!!!</div>");
             
             
-            wefwef
+            alert($("#annotation_0"));
             
             /*$("#" + annotation_number).append("<div class='text_button' id='text_button_" + annotation_number + "' note_id='" + annotation_number + "' >Click here!</div>");
             $("#" + annotation_number).append("<div class='text_button' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' >ewfffffffffffffffwefwef</div>");
