@@ -12,7 +12,7 @@ function getPageHtmlCallback(response) {
             
             var o = document.getElementsByTagName('iframe')[0];
             console.log(o);
-            o.contentWindow.postMessage('Hello World');
+            o.contentWindow.postMessage('Hello World', "http://sciverse-annotator.herokuapp.com");
             console.log("test");
             
             /*console.log($("#content_iframe").contents());
