@@ -33,7 +33,7 @@ function enableAnnotations() {
         up.y = evt.clientY;
         
         
-        //$(body).append("<div class='annotation' id='annotation_number'>annotation</div>");
+        $(body).append("<div class='annotation' id='annotation_number'>annotation</div>");
         
     });
 }
