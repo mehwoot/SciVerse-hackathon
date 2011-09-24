@@ -28,14 +28,14 @@ function enableAnnotations() {
        down.y = evt.clientY; 
     });
     
-    $("#articleHTML").mouseup(function (evt) {
+    /*$("#articleHTML").mouseup(function (evt) {
         up.x = evt.clientX;
         up.y = evt.clientY;
         
         
-        $(body).append("<div class='annotation' id='annotation_number'>annotation</div>");
+        //$(body).append("<div class='annotation' id='annotation_number'>annotation</div>");
         
-    });
+    });*/
 }
 
 $(document).ready(function () {
