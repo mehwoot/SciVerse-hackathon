@@ -19,8 +19,11 @@ function getContentCallback(response) {
 
 function enableAnnotations() {
     $("#articleHTML").mousedown(function (evt) {
-       alert(evt.x); 
-       alert(evt.mousex); 
+       alert(evt.clientX); 
+       alert(evt.pageX); 
+       alert(evt.layerX); 
+       alert(evt.offsetX); 
+       alert(evt.screenX); 
     });
 }
 
