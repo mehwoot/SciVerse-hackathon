@@ -35,7 +35,7 @@
   <div id="sidebar" style="width: 200px; left: 1100px; position: fixed; " >
     <div id="make_annotation">Click here to make annotation</div>
     <div id="comments"></div>
-    <textarea id="comment_input" cols="15" rows="2"></textarea>
+    <textarea id="comment_input" cols="30" rows="3"></textarea>
     <input type="submit" id="comment_submit" value="submit" />
  
  </div>
