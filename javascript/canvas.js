@@ -60,12 +60,14 @@ function enableAnnotations() {
             
             $("#annotation_" + annotation_number).append("<div style='position:relative; top: " + height + "px; width: " + width + "px;'> <div class='text_button' style='position:relative; text-align: center;' id='text_button_" + annotation_number + "' note_id='" + annotation_number + "' >Add text</div><div class='text_button' style='display:none; ' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' ><textarea id='textarea_" + annotation_number + "' rows='1' cols='15'></textarea><br/><input type='submit' note_id='" + annotation_number + "' id='annotation_submit_" + annotation_number + "' value='submit' /></div></div>");
             
+            /* When you click the button to slide out the comments */
             $("#text_button_" + annotation_number).click(function () {
                 $("#text_field_" + $(this).attr("note_id")).slideToggle();
             });
             
             $("#annotation_submit_" + annotation_number).click(function () {
-                $("#text_field_" + $(this).attr("note_id")).before("<div style='position:relative;' >" + $("#textarea_" + $(this).attr("note_id")).attr("value") + "</div>");
+                $("#textarea_" + $(this).attr("note_id")).before("<div style='position:relative;' >" + $("#textarea_" + $(this).attr("note_id")).attr("value") + "</div>");
+                $("#textarea_" + $(this).attr("note_id")).attr("value", "");
                 $(this).parent().slideToggle(); 
             });
             
