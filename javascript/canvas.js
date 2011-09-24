@@ -80,7 +80,7 @@ function enableAnnotations() {
             annotation_number += 1;
             evt.preventDefault();
             
-            alert(annotations);
+            alert(annotations[0].width);
             
             annotate_mode = false;
         }
