@@ -52,8 +52,8 @@ function enableAnnotations() {
     
     $("#articleHTML").mouseup(function (evt) {
         if (annotate_mode) {
-            up.x = evt.pageX;
-            up.y = evt.pageY;
+            up.x = evt.clientX;
+            up.y = evt.clientY;
             
             first = {};
             second = {};

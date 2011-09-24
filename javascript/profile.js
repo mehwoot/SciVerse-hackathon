@@ -4,6 +4,9 @@ context_obj = {};
 function contextCallback(obj) {
     
     context_obj = obj;
+    
+    
+        $("#content").html("<iframe id='content_iframe' src='http://sciverse-annotator.herokuapp.com/papers/" + obj.pii + "/gadget' width='300' height='150'></iframe>");
 
     $("#content").html("<a href='javascript:void(0);' id='annotate'>Click here to annotate this article!</a>");
     

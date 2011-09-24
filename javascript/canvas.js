@@ -13,11 +13,7 @@ function getPageHtmlCallback(response) {
             var o = document.getElementsByTagName('iframe')[0];
             console.log(o);
             o.contentWindow.postMessage(response, "http://sciverse-annotator.herokuapp.com");
-            console.log("test");
             
-            /*console.log($("#content_iframe").contents());
-            console.log($("#content_iframe").contents().find("#articleHTML").length);
-            $("#content_iframe").contents().find("#articleHTML").html(response);*/
         });
     }
     
