@@ -35,7 +35,18 @@ function enableAnnotations() {
         up.x = evt.clientX;
         up.y = evt.clientY;
         
-        $("#articleHTML").append("<div class='annotation' style='position: absolute; left:" + up.x + "px; top: " + up.y + "px;' id='annotation_number'>annotation!!!!!!!!</div>");
+        first = {}
+        
+        first.x = Math.min(down.x, up.x);
+        first.y = Math.min(down.y, up.y);
+        
+        second.x = Math.max(down.x, up.x);
+        second.y = Math.max(down.y, up.y);
+        
+        width = second.x - first.x;
+        height = second.y - first.y;
+                
+        $("#articleHTML").append("<div class='annotation' style='position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_number'>annotation!!!!!!!!</div>");
         
     });
 }
