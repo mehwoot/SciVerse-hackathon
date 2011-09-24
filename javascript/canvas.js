@@ -6,9 +6,9 @@
   */
   
   
-down = {};
-up = {};
-annotation_number = 0;
+//down = {};
+//up = {};
+//annotation_number = 0;
   
 function getContentCallback(response) {
     if (response != null)
