@@ -10,6 +10,7 @@ down = {};
 up = {};
 annotation_number = 0;
 annotate_mode = false;
+context_data = {};
 
 function getContentCallback(response) {
     if (response != null)
@@ -58,7 +59,7 @@ function enableAnnotations() {
                     
             $("#articleHTML").append("<div class='annotation' style='border: 1px solid #f00; position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_" + annotation_number + "'></div>");
             
-            $("#annotation_" + annotation_number).append("<div style='position:relative; top: " + height + "px; width: " + width + "px;'> <div class='text_button' style='position:relative; text-align: center;' id='text_button_" + annotation_number + "' note_id='" + annotation_number + "' >Add text</div><div class='text_button' style='display:none; ' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' ><textarea id='textarea_" + annotation_number + "' rows='1' cols='15'></textarea><br/><input type='submit' note_id='" + annotation_number + "' id='annotation_submit_" + annotation_number + "' value='submit' /></div></div>");
+            $("#annotation_" + annotation_number).append("<div style='position:relative; top: " + height + "px;'> <div class='text_button' style='position:relative; text-align: center;' id='text_button_" + annotation_number + "' note_id='" + annotation_number + "' >Add text</div><div class='text_button' style='display:none; ' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' ><textarea id='textarea_" + annotation_number + "' rows='1' cols='15'></textarea><br/><input type='submit' note_id='" + annotation_number + "' id='annotation_submit_" + annotation_number + "' value='submit' /></div></div>");
             
             /* When you click the button to slide out the comments */
             $("#text_button_" + annotation_number).click(function () {
@@ -82,8 +83,7 @@ function enableAnnotations() {
 
 $(document).ready(function () {
     
-    var data = gadgets.views.getParams();
-    alert(data.pii);
+    context_data = gadgets.views.getParams();
     /* Get the article content */
     gadgets.sciverse.getArticleContent(getContentCallback);
     
