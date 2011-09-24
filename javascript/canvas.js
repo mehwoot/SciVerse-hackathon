@@ -11,7 +11,8 @@ up = {};
 annotation_number = 0;
 annotate_mode = false;
 context_data = {};
-annotations = {}
+annotations = {};
+annotation_selected = -1;
 
 function getContentCallback(response) {
     if (response != null)
@@ -41,6 +42,13 @@ function enableAnnotations() {
        
     });
     
+    $("#comment_submit").click(function () {
+        if (annotation_selected != -1) {
+            annotations[annotation_selected].comments.push($("#comment_input").attr("value"));
+            $("#comments").html(annotations[annotation_selected].comments);
+        }
+    });
+    
     $("#articleHTML").mouseup(function (evt) {
         if (annotate_mode) {
             up.x = evt.pageX;
@@ -58,7 +66,7 @@ function enableAnnotations() {
             width = second.x - first.x;
             height = second.y - first.y;
                     
-            $("#articleHTML").append("<div class='annotation' style='border: 1px solid #f00; position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_" + annotation_number + "'></div>");
+            $("#articleHTML").append("<div class='annotation' style='border: 1px solid #f00; position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_" + annotation_number + "' ann_num='"+annotation_number+"'></div>");
             
             $("#annotation_" + annotation_number).append("<div style='position:relative; top: " + height + "px; width: 300px;'> <div class='text_button' style='position:relative; text-align: left;' id='text_button_" + annotation_number + "' note_id='" + annotation_number + "' >Add text</div><div class='text_button' style='display:none; ' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' ><textarea id='textarea_" + annotation_number + "' rows='1' cols='15'></textarea><br/><input type='submit' note_id='" + annotation_number + "' id='annotation_submit_" + annotation_number + "' value='submit' /></div></div>");
             
@@ -70,6 +78,12 @@ function enableAnnotations() {
                 $("#text_field_" + $(this).attr("note_id")).slideToggle();
             });
             
+            
+            $("#annotation_" + annotation_number).click(function() {
+                ann_num = $(this).attr("ann_num");
+                annotation_selected = ann_num;
+                $("#comments").html(annotations[annotation_selected].comments);
+            });
             
             $("#annotation_submit_" + annotation_number).click(function () {
                 ann_num = $(this).attr("note_id");
