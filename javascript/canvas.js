@@ -82,6 +82,8 @@ function enableAnnotations() {
 
 $(document).ready(function () {
     
+    alert(gadgets.view.getParams().pii);
+    
     /* Get the article content */
     gadgets.sciverse.getArticleContent(getContentCallback);
     
