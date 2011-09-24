@@ -9,7 +9,6 @@ function contextCallback(obj) {
     
     $("#annotate").click(function () {
         var canvas_view = new gadgets.views.View("canvas"); 
-        alert(context_obj.pii);
         gadgets.views.requestNavigateTo(canvas_view, context_obj);
     });
    
