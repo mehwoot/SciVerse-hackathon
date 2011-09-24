@@ -35,8 +35,6 @@ function enableAnnotations() {
         //up.x = evt.clientX;
         //up.y = evt.clientY;
         
-        alert('lol!');
-        
         $("#articleHTML").append("<div class='annotation' id='annotation_number'>annotation!!!!!!!!</div>");
         
     });
