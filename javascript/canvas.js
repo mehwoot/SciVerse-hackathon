@@ -9,9 +9,15 @@ function getPageHtmlCallback(response) {
     if (response != null)
     {
         $("#content_iframe").load(function () {
-            console.log($("#content_iframe").contents());
+            
+            
+            var o = document.getElementsByTagName('content_iframe')[0];
+            o.contentWindow.postMessage('Hello World');
+            
+            
+            /*console.log($("#content_iframe").contents());
             console.log($("#content_iframe").contents().find("#articleHTML").length);
-            $("#content_iframe").contents().find("#articleHTML").html(response);
+            $("#content_iframe").contents().find("#articleHTML").html(response);*/
         });
     }
     
