@@ -61,7 +61,6 @@ function enableAnnotations() {
             $("#annotation_" + annotation_number).append("<div style='position:relative; top: " + height + "px; width: " + width + "px;'> <div class='text_button' style='position:relative; text-align: center;' id='text_button_" + annotation_number + "' note_id='" + annotation_number + "' >Add text</div><div class='text_button' style='display:none; ' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' ><textarea id='textarea_" + annotation_number + "' rows='1' cols='15'></textarea><br/><input type='submit' note_id='" + annotation_number + "' id='annotation_submit_" + annotation_number + "' value='submit' /></div></div>");
             
             $("#text_button_" + annotation_number).click(function () {
-                alert('l0l');
                 $("#text_field_" + $(this).attr("note_id")).slideToggle();
             });
             
