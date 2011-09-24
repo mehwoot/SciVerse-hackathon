@@ -25,6 +25,8 @@
 
  <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/gareth/javascript/canvas.js">
  </script>
+ 
+ <link rel="stylesheet" type="text/css" href="https://raw.github.com/mehwoot/SciVerse-hackathon/gareth/css/canvas.css" />
 
  <div id="articleHTML" >
 
