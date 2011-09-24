@@ -83,7 +83,7 @@ function enableAnnotations() {
 $(document).ready(function () {
     
     var data = gadgets.views.getParams();
-    
+    alert(data.pii);
     /* Get the article content */
     gadgets.sciverse.getArticleContent(getContentCallback);
     
