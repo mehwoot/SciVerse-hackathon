@@ -16,13 +16,20 @@ function getContentCallback(response) {
         document.getElementById("articleHTML").innerHTML=response;
     }
     // Tells gadget to resize itself
+    
     gadgets.window.adjustHeight();
+    
+        alert('woah!');
     
     enableAnnotations();
     
 }
 
 function enableAnnotations() {
+    
+    
+    alert('whoo!');
+    
     $("#articleHTML").mousedown(function (evt) {
        //down.x = evt.clientX; 
        //down.y = evt.clientY; 
