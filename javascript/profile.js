@@ -1,14 +1,16 @@
+function contextCallback(obj){
+    
+    var rs = JSON.parse(obj);
+    alert(rs);
+   
+}
+
 $(document).ready(function() {
     
     
     gadgets.sciverse.getContextInfo(contextCallback);
      
-    function contextCallback(obj){
-        
-        var rs = JSON.parse(obj);
-        alert(rs);
-       
-    }
+
 
     /* Display the welcome text */
     $("#content").html("<a href='javascript:void(0);' id='annotate'>Click here to annotate this article!</a>");
