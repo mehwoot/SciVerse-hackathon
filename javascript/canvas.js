@@ -35,7 +35,8 @@ function enableAnnotations() {
         up.x = evt.clientX;
         up.y = evt.clientY;
         
-        first = {}
+        first = {};
+        second = {};
         
         first.x = Math.min(down.x, up.x);
         first.y = Math.min(down.y, up.y);
