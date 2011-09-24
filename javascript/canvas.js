@@ -10,17 +10,14 @@ function getPageHtmlCallback(response) {
     {
         $("#content_iframe").load(function () {
             
-            
-            //var o = document.getElementById('content_iframe');
-            //o.contentWindow.postMessage('Hello World');
-            
+            var o = document.getElementById('content_iframe');
+            o.contentWindow.postMessage('Hello World');
             
             /*console.log($("#content_iframe").contents());
             console.log($("#content_iframe").contents().find("#articleHTML").length);
             $("#content_iframe").contents().find("#articleHTML").html(response);*/
         });
     }
-    
     
 }
 		
