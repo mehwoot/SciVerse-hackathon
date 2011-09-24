@@ -27,6 +27,13 @@ function getContentCallback(response) {
     
 }
 
+function updateDisplayComments() {
+    $("#comments").html("");
+    for (i=0; i<annotations[annotation_selected].comments.length; i++) {
+        $("#comments").append("<span class='comment'>" + annotations[annotation_selected].comments[i] + "</span><br/>");
+    }    
+}
+
 function enableAnnotations() {
     
     $("#make_annotation").click(function () {
@@ -46,10 +53,7 @@ function enableAnnotations() {
         if (annotation_selected != -1) {
             annotations[annotation_selected].comments.push($("#comment_input").attr("value"));
             $("#comment_input").attr("value", "");
-            $("#comments").html("");
-            for (i=0; i<annotations[annotation_selected].comments.length; i++) {
-                $("#comments").append("<span class='comment'>" + annotations[annotation_selected].comments[i] + "</span>");
-            }
+            updateDisplayComments();
         }
     });
     
@@ -86,7 +90,7 @@ function enableAnnotations() {
             $("#annotation_" + annotation_number).click(function() {
                 ann_num = $(this).attr("ann_num");
                 annotation_selected = ann_num;
-                $("#comments").html(annotations[annotation_selected].comments);
+                updateDisplayComments();
             });
             
             $("#annotation_submit_" + annotation_number).click(function () {
