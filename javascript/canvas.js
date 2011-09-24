@@ -19,7 +19,8 @@ function getContentCallback(response) {
 
 function enableAnnotations() {
     $("#articleHTML").mousedown(function (evt) {
-       alert(evt.which); 
+       alert(evt.x); 
+       alert(evt.mousex); 
     });
 }
 
