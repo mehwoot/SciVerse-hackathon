@@ -76,15 +76,7 @@ function enableAnnotations() {
                     
             $("#articleHTML").append("<div class='annotation' style='border: 1px solid #f00; position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_" + annotation_number + "' ann_num='"+annotation_number+"'></div>");
             
-            $("#annotation_" + annotation_number).append("<div style='position:relative; top: " + height + "px; width: 300px;'> <div class='text_button' style='position:relative; text-align: left;' id='text_button_" + annotation_number + "' note_id='" + annotation_number + "' >Add text</div><div class='text_button' style='display:none; ' id='text_field_" + annotation_number + "' note_id='" + annotation_number + "' ><textarea id='textarea_" + annotation_number + "' rows='1' cols='15'></textarea><br/><input type='submit' note_id='" + annotation_number + "' id='annotation_submit_" + annotation_number + "' value='submit' /></div></div>");
-            
-            
             annotations[annotation_number] = { "x" : first.x, "y": first.y, "width": width, "height": height, comments : new Array(), "id" : annotation_number };
-            
-            /* When you click the button to slide out the comments */
-            $("#text_button_" + annotation_number).click(function () {
-                $("#text_field_" + $(this).attr("note_id")).slideToggle();
-            });
             
             
             $("#annotation_" + annotation_number).click(function() {
@@ -93,19 +85,9 @@ function enableAnnotations() {
                 updateDisplayComments();
             });
             
-            $("#annotation_submit_" + annotation_number).click(function () {
-                ann_num = $(this).attr("note_id");
-                annotations[ann_num].comments.push($("#textarea_" + ann_num).attr("value"));
-                $("#textarea_" + $(this).attr("note_id")).before("<div style='position:relative;' >" + $("#textarea_" + $(this).attr("note_id")).attr("value") + "</div>");
-                $("#textarea_" + $(this).attr("note_id")).attr("value", "");
-                //$(this).parent().slideToggle(); 
-            });
-            
             
             annotation_number += 1;
             evt.preventDefault();
-            
-            alert(annotations[0].comments);
             
             annotate_mode = false;
         }
