@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs
+            title="sciverse"
+            author_email="ramlambmoo@gmail.com"
+            description="sciverse hackathon">
+        <Require feature="sciverse" />
+    </ModulePrefs>
+    <Content type="html" view="canvas"><![CDATA[<!-- The code for Canvas view is here. -->
+<div>Canvas view for sciverse.</div>]]></Content>
+    <Content type="html" view="profile"><![CDATA[<!-- The code for Profile view is here. -->
+<div>Hey yeah I have a profile view!</div>]]></Content>
+    <Content type="html" view="sciverseResultsView"><![CDATA[<!-- The code for Sciverse Results View view is here. -->
+<div>Sciverse Results View view for sciverse.</div>]]></Content>
+    <Content type="html" view="hover"><![CDATA[<!-- The code for Hover view is here. -->
+<div>Hover view for sciverse.</div>]]></Content>
+</Module>
