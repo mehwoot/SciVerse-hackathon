@@ -11,7 +11,7 @@ function getPageHtmlCallback(response) {
         $("#content_iframe").load(function () {
             
             
-            var o = document.getElementsByTagName('content_iframe')[0];
+            var o = document.getElementsById('content_iframe')[0];
             o.contentWindow.postMessage('Hello World');
             
             
