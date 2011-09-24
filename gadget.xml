@@ -36,6 +36,10 @@
  <![CDATA[
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
  
+  <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/master/javascript/profile.js">
+ </script>
+ 
+ 
  <div id="content" style="display:block">
  
  </div>
