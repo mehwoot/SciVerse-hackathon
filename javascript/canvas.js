@@ -12,21 +12,13 @@ function getContentCallback(response) {
     }
     // Tells gadget to resize itself
     gadgets.window.adjustHeight();
-    
-    //enableAnnotations();
 }
-
-function enableAnnotations {
-   // $j("#articleHTML").mousedown();
-}
-
 
 $(document).ready(function () {
     
+    alert('lol');
+    
     /* Get the article content */
     gadgets.sciverse.getArticleContent(getContentCallback);
-    
-    
-    
     
 });
