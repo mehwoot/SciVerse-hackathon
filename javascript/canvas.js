@@ -74,7 +74,7 @@ function enableAnnotations() {
             width = second.x - first.x;
             height = second.y - first.y;
                     
-            $("#articleHTML").append("<div class='annotation' style='border: 1px solid #f00; position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_" + annotation_number + "' ann_num='"+annotation_number+"'></div>");
+            $("#articleHTML").append("<div class='annotation selected' style='border: 1px solid #f00; position: absolute; left:" + first.x + "px; top: " + first.y + "px; width: " + width + "px; height: " + height + "px; ' id='annotation_" + annotation_number + "' ann_num='"+annotation_number+"'></div>");
             
             annotations[annotation_number] = { "x" : first.x, "y": first.y, "width": width, "height": height, comments : new Array(), "id" : annotation_number };
             
@@ -87,7 +87,7 @@ function enableAnnotations() {
                 $(this).addClass("selected");
             });
             
-            
+            annotation_selected = annotation_number;
             annotation_number += 1;
             evt.preventDefault();
             
