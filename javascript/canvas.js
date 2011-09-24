@@ -19,9 +19,6 @@ function getContentCallback(response) {
     {
         document.getElementById("articleHTML").innerHTML=response;
     }
-    // Tells gadget to resize itself
-    
-    gadgets.window.adjustHeight();
     
     enableAnnotations();
     
