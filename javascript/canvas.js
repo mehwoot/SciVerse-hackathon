@@ -70,6 +70,7 @@ function enableAnnotations() {
                 $("#text_field_" + $(this).attr("note_id")).slideToggle();
             });
             
+            
             $("#annotation_submit_" + annotation_number).click(function () {
                 ann_num = $(this).attr("note_id");
                 annotations[ann_num].comments.push($("#textarea_" + ann_num).attr("value"));
