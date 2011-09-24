@@ -66,7 +66,7 @@ function enableAnnotations() {
             });
             
             $("#annotation_submit_" + annotation_number).click(function () {
-                $(this).parent().children[0].append("<div>" + $j("textarea_" + $(this).attr("note_id")).html() + "</div>");
+                $j("textarea_" + $(this).attr("note_id")).before("<div>" + $j("textarea_" + $(this).attr("note_id")).html() + "</div>");
                 $(this).parent().slideToggle(); 
             });
             
