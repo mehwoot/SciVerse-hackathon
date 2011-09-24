@@ -37,7 +37,7 @@ function enableAnnotations() {
         
         alert('lol!');
         
-        $(body).append("<div class='annotation' id='annotation_number'>annotation!!!!!!!!</div>");
+        $("#articleHTML").append("<div class='annotation' id='annotation_number'>annotation!!!!!!!!</div>");
         
     });
 }
