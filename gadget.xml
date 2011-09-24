@@ -26,14 +26,7 @@
  <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/will/javascript/canvas.js">
  </script>
 
- <div id="articleHTML" >
-
- </div>
- 
- <div id="sidebar">
- 
- </div>
- 
+<div id="content" style="position: absolute; top: 0px; left:0px; right:0px; bottom: 0px;" ></div> 
    ]]>
       </Content>
     
