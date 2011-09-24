@@ -80,6 +80,8 @@ function enableAnnotations() {
             annotation_number += 1;
             evt.preventDefault();
             
+            alert(annotations);
+            
             annotate_mode = false;
         }
     });
