@@ -4,6 +4,9 @@
   * response - response from getArticleContent call, string of article page body
   *
   */
+  
+  alert('hey');
+  
  function getContentCallback(response)
  {
    if (response != null)

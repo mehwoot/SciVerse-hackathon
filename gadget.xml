@@ -23,32 +23,8 @@
       <![CDATA[
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
 
- <script type="text/javascript">
-
- /*
-  * Call back function to process content
-  *
-  * response - response from getArticleContent call, string of article page body
-  *
-  */
- function getContentCallback(response)
- {
-   if (response != null)
-   {
-     document.getElementById("articleHTML").innerHTML=response;
-   }
-          // Tells gadget to resize itself
-          gadgets.window.adjustHeight();
- }
-
-
-    $(document).ready(function () {
-        gadgets.sciverse.getArticleContent(getContentCallback);
-    });
-
+ <script src="https://raw.github.com/mehwoot/SciVerse-hackathon/master/javascript/canvas.js">
  </script>
-
-
 
  <div id="articleHTML" style="display:block">
 
