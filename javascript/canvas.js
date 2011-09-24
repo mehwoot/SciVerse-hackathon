@@ -16,8 +16,6 @@ function getContentCallback(response) {
 
 $(document).ready(function () {
     
-    alert('lol');
-    
     /* Get the article content */
     gadgets.sciverse.getArticleContent(getContentCallback);
     
